@@ -1,0 +1,294 @@
+﻿@{
+    ViewData["Title"] = "Information Page";
+    Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Frontend/info_student.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            size: 14rem;
+        }
+
+        .container_info {
+            width: 100%;
+        }
+
+        .header_info {
+            width: 100%;
+            height: 16.4rem;
+            display: flex;
+        }
+
+        .header_main {
+            width: 50%;
+            display: flex;
+            padding-left: 3rem;
+            display: flex;
+            align-items: center;
+        }
+
+            .header_main .img_student {
+                width: 30%;
+                margin-left:-1.5rem;
+            }
+
+        .info_student {
+            display: flex;
+            flex-wrap: wrap;
+            /* align-items: center; */
+            margin-left:1.5rem;
+        }
+
+            .info_student h5 {
+                font-size: 1rem;
+                width: 100%;
+                margin-top: 1rem;
+                padding-bottom: 3rem;
+            }
+
+        .name_std {
+            font-size: 1.2rem;
+        }
+
+        .header_main .img_student img {
+            width: 9rem;
+            height: 9rem;
+            border-radius: 5.5rem;
+        }
+
+        .content_detail label {
+            font-size: 0.9rem;
+        }
+
+        .other_detail {
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+
+        .left_other_detail {
+            width: 50%;
+            border-left: 0.1rem black solid;
+        }
+
+
+        .other_detail .content_od {
+            display: flex;
+            font-size: 0.9rem;
+        }
+
+            .other_detail .content_od i {
+                transform: translateY(40%);
+                font-size: 1rem;
+                /* width: 1.3rem;
+            height: 1.3rem; */
+                line-height: 100%;
+                padding-right: 1rem;
+            }
+
+            .other_detail .content_od span {
+                font-weight: 500;
+            }
+
+        .content_od {
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .semi {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .content_semi {
+            width: 10rem;
+            height: 2rem;
+            border: 1px solid black;
+            border-radius: 1rem;
+            margin-left: 1.5%;
+            cursor: pointer;
+        }
+
+            .content_semi p {
+                text-align: center;
+                line-height: 1.8rem;
+                font-weight: 500;
+                font-size: 0.7rem;
+            }
+
+        .table_info {
+            margin-top: 1.5rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content_table {
+            margin-left: 1.5rem;
+            width: 90%;
+        }
+
+        .name_table {
+            width: 12rem;
+            height: 3rem;
+            margin-left: 1rem;
+        }
+
+        .content_table ul li {
+            list-style: none;
+            display: flex;
+        }
+
+
+            .content_table ul li span {
+                font-size: 0.9rem;
+                font-weight: 500;
+                width: 14rem;
+                height: 3rem;
+                line-height: 3rem;
+                border: 1px solid gray;
+                border-right: 0;
+                padding-left: 1rem;
+            }
+
+            .content_table ul li input {
+                width: 80%;
+                border: 1px solid gray;
+                outline: none;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container_info">
+        <!-- header-info -->
+        <div class="header_info">
+            <div class="header_main">
+                <div class="img_student">
+                    <img src="../img/img_cat.jpeg" alt="">
+                </div>
+                <div class="info_student">
+                    <h4 class="name_std">
+                        Bùi Quốc Thắng
+                    </h4>
+                    <h5>
+                        BD00170
+                    </h5>
+                    <div class="details">
+                        <div class="content_detail">
+                            <label for="">Computing | Software Engineering</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- other -->
+            <div class="other_detail">
+                <!-- left other -->
+                <div class="left_other_detail">
+                    <div class="content_od">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <div class="nameact">
+                            <span>Birthday</span>
+                            <p>11/062003</p>
+                        </div>
+                    </div>
+
+                    <div class="content_od">
+                        <i class="fa-solid fa-venus-mars"></i>
+                        <div class="nameact">
+                            <span>Gender</span>
+                            <p>Male</p>
+                        </div>
+                    </div>
+
+                    <div class="content_od">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="nameact">
+                            <span>Address</span>
+                            <p>hvakjshfvakjfv</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right other -->
+                <div class="right_other_detail">
+                    <div class="content_od">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <div class="nameact">
+                            <span>Day admission</span>
+                            <p>11/11/2021</p>
+                        </div>
+                    </div>
+
+                    <div class="content_od">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="nameact">
+                            <span>Phone</span>
+                            <p>01234567897</p>
+                        </div>
+                    </div>
+
+                    <div class="content_od">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="nameact">
+                            <span>Place Issue</span>
+                            <p>/</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="semi">
+            <div class="content_semi">
+                <p>Related Decision</p>
+            </div>
+        </div>
+
+        <div class="table_info">
+            <div class="content_table">
+                <div class="name_table">
+                    <span>STUDENT DETAILS</span>
+                </div>
+                <ul>
+                    <li>
+                        <span>STUDENT CODE</span>
+                        <input type="text" name="" id="">
+                    </li>
+                    <li>
+                        <span>EMAIL</span>
+                        <input type="text" name="" id="">
+                    </li>
+                    <li>
+                        <span>INITAL MAJOR</span>
+                        <input type="text" name="" id="">
+                    </li>
+                    <li>
+                        <span>NAME SCHOOL</span>
+                        <input type="text" name="" id="">
+                    </li>
+                    <li>
+                        <span>EXPECTED GRADUATION DATE</span>
+                        <input type="text" name="" id="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

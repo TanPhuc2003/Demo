@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Frontend/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            size: 16rem;
+        }
+
+        .header_home {
+            width: 100%;
+            height: 40rem;
+            display: flex;
+        }
+
+        .greeting {
+            width: 45%;
+            margin-left:1rem;
+        }
+
+        .grt_other {
+            width: 100%;
+        }
+
+        .greeting h2 {
+            margin-top: 7rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .logo_img {
+            width: 53%;
+            /* display: flex; */
+            /* align-items: center; */
+        }
+
+            .logo_img img {
+                width: 85%;
+                margin-left: 5.8rem;
+                margin-top: 5rem;
+            }
+
+        .other_grt {
+            display: flex;
+            justify-content: center;
+        }
+
+        .other_grt {
+            margin-top: 3rem;
+        }
+
+        .btn_other {
+            padding: 2rem;
+            margin: 1rem;
+        }
+
+            .btn_other p {
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .btn_other img {
+                height: 3rem;
+                width: 3rem;
+                margin-left: 0.3rem;
+            }
+
+        .quotations {
+            width: 100%;
+            margin-top: 12rem;
+            display: flex;
+            justify-content: center;
+        }
+
+            .quotations span {
+                font-style: italic;
+            }
+    </style>
+</head>
+<body>
+    <div class="container_home">
+        <div class="header_home">
+            <div class="greeting">
+                <div class="grt_header">
+                    <h2>
+                        Welcome To Student Manager System
+                    </h2>
+                </div>
+                <div class="other_grt">
+                    <div class="btn_other">
+                        <img src="../img/news.png" alt="">
+                        <p>News</p>
+                    </div>
+                    <div class="btn_other">
+                        <img src="../img/lh.png" alt="">
+                        <p>Schedule</p>
+                    </div>
+
+                    <div class="btn_other">
+                        <img src="../img/q&a.png" alt="">
+                        <p>Q & A</p>
+                    </div>
+                    <div class="btn_other">
+                        <img src="../img/q&a.png" alt="">
+                        <p>Attendance</p>
+                    </div>
+                </div>
+
+                <div class="quotations">
+                    <span>
+                        "Believe you can, and you're halfway there."
+                    </span>
+                </div>
+            </div>
+
+            <div class="logo_img">
+                <img src="../img/school-software.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

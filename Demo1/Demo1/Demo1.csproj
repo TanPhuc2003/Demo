@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\background-form.png" />
+    <None Include="wwwroot\img\dd.png" />
+    <None Include="wwwroot\img\icon_studentmanager.jpeg" />
+    <None Include="wwwroot\img\img_cat.jpeg" />
+    <None Include="wwwroot\img\lh.png" />
+    <None Include="wwwroot\img\news.png" />
+    <None Include="wwwroot\img\q&amp;a.png" />
+    <None Include="wwwroot\img\school-software.png" />
+    <None Include="wwwroot\img\shutterstock_411388219.jpg" />
+    <None Include="wwwroot\img\snapedit_1710158201409.jpeg" />
+  </ItemGroup>
+
+</Project>
